@@ -7,7 +7,7 @@ namespace Exercicios
         static void Main(string[] args)
         {
             Console.Clear();
-            PrimeiroTeste();
+            SegundoTeste();
         }
         static void PrimeiroTeste()
         //Fazer um programa para ler o código de uma peça (peça 1), o número de peças 1, o valor unitário de cada peça 1,
@@ -29,6 +29,19 @@ namespace Exercicios
             double precoFinal = (preco1 * numPecas1) + (preco2 * numPecas2);
 
             Console.WriteLine("VALOR A PAGAR: R$ " + precoFinal);
+        }
+        static void SegundoTeste()
+        // Faça um programa para ler o valor do raio de um círculo, e depois mostrar o valor da área deste círculo com quatro
+        // casas decimais conforme exemplos.Considere o valor de π = 3.14159
+        // Fórmula: Area=pi . raio²
+        {
+            double pi, raio, area;
+            pi = 3.14159;
+
+            raio = double.Parse(Console.ReadLine());
+            area = pi * (raio * raio);
+
+            Console.WriteLine("A=" + area.ToString("N4"));
         }
     }
 }
