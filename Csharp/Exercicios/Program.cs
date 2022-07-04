@@ -10,8 +10,8 @@ namespace Exercicios
             PrimeiroTeste();
         }
         static void PrimeiroTeste()
-        //Fazer um programa para ler o código de uma peça 1, o número de peças 1, o valor unitário de cada peça 1,
-        //o código de uma peça 2, o número de peças 2 e o valor unitário de cada peça 2. Calcule e mostre o valor a ser pago.
+        //Fazer um programa para ler o código de uma peça (peça 1), o número de peças 1, o valor unitário de cada peça 1,
+        //o código de uma peça (peça 2), o número de peças 2 e o valor unitário de cada peça 2. Calcule e mostre o valor a ser pago.
         {
             int codPecas1, codPecas2, numPecas1, numPecas2;
             double preco1, preco2;
