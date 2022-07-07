@@ -7,7 +7,7 @@ namespace Exercicios
         static void Main(string[] args)
         {
             Console.Clear();
-            TerceiroTeste();
+            QuartoTeste();
         }
         static void PrimeiroTeste()
         //Fazer um programa para ler o código de uma peça (peça 1), o número de peças 1, o valor unitário de cada peça 1,
@@ -101,6 +101,49 @@ namespace Exercicios
                     }
                 default:
                     throw new ArgumentOutOfRangeException();
+            }
+        }
+        static void QuartoTeste()
+        // Ler os valores dos três coeficientes "a", "b" e "c" de uma equação do segundo grau (aX² + bX + c = 0)
+        // Em seguida, mostrar os valores das raízes da equação usando a fórmula de Baskara.
+        // Se a equação não possuir raízes (o valor de "a" não pode ser zero, e o valor de "delta" não pode ser
+        // negativo), mostrar uma mensagem "Impossivel calcular"
+        {
+            double a, b, c, delta, raizDelta, x1, x2;
+
+            Console.WriteLine("Cauculo de Bhaskara");
+            Console.WriteLine("Base --> aX² + bX + c = 0\n");
+
+            Console.WriteLine("Insira o valor de 'A' (aX²)");
+            a = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Insira o valor de 'B' (bX)");
+            b = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Insira o valor de 'C' (c)");
+            c = double.Parse(Console.ReadLine());
+            Console.WriteLine("");
+
+            delta = (b * b) - (4 * a * c);
+            raizDelta = Math.Sqrt(delta);
+
+            if (a == 0)
+            {
+                Console.WriteLine("Impossível calcular (o valor 'A' não pode ser igual a zero)");
+            }
+
+            else if (delta <= 0)
+            {
+                Console.WriteLine("Impossível calcular (o valor de Delta não pode ser menor ou igual a zero)");
+            }
+
+            else
+            {
+                x1 = ((-b) + raizDelta) / (2 * a);
+                x2 = ((-b) - raizDelta) / (2 * a);
+
+                Console.WriteLine($"X1 = {x1.ToString("N5")}\n");
+                Console.WriteLine($"X2 = {x2.ToString("N5")}");
             }
         }
     }
