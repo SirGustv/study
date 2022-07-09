@@ -7,7 +7,7 @@ namespace Exercicios
         static void Main(string[] args)
         {
             Console.Clear();
-            QuartoTeste();
+            QuintoTeste();
         }
         static void PrimeiroTeste()
         //Fazer um programa para ler o código de uma peça (peça 1), o número de peças 1, o valor unitário de cada peça 1,
@@ -145,6 +145,23 @@ namespace Exercicios
                 Console.WriteLine($"X1 = {x1.ToString("N5")}\n");
                 Console.WriteLine($"X2 = {x2.ToString("N5")}");
             }
+        }
+        static void QuintoTeste()
+        // Escreva um programa que repita a leitura de uma senha até que ela seja válida. Para cada leitura de senha
+        // incorreta informada, escrever a mensagem "Senha Invalida". Quando a senha for informada corretamente deve ser
+        // impressa a mensagem "Acesso Permitido" e o algoritmo encerrado. Considere que a senha correta é o valor 2002.
+        {
+            Console.WriteLine("Insira a senha");
+            int senha = int.Parse(Console.ReadLine());
+
+            while (senha != 2002)
+            {
+                Console.WriteLine("Senha inválida");
+                Console.WriteLine("--------------------");
+                Console.WriteLine("Insira a senha novamente");
+                senha = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("Acesso permitido!");
         }
     }
 }
