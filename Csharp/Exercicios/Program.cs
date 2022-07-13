@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Exercicios
 {
@@ -7,7 +8,7 @@ namespace Exercicios
         static void Main(string[] args)
         {
             Console.Clear();
-            QuintoTeste();
+            SextoTeste();
         }
         static void PrimeiroTeste()
         //Fazer um programa para ler o código de uma peça (peça 1), o número de peças 1, o valor unitário de cada peça 1,
@@ -162,6 +163,34 @@ namespace Exercicios
                 senha = int.Parse(Console.ReadLine());
             }
             Console.WriteLine("Acesso permitido!");
+        }
+        static void SextoTeste()
+        // Leia um valor inteiro N. Este valor será a quantidade de valores inteiros X que serão lidos em seguida.
+        // Mostre quantos destes valores X estão dentro do intervalo [10,20] e quantos estão fora do intervalo, mostrando
+        // essas informações conforme exemplo (use a palavra "in" para dentro do intervalo, e "out" para fora do intervalo).
+        {
+            int n = int.Parse(Console.ReadLine());
+            List<int> x = new List<int> { n };
+            int dentro = 0;
+            int fora = 0;
+
+            for (int i = 0; i < n; i++)
+            {
+                x.Add(int.Parse(Console.ReadLine()));
+
+                if (x[i] >= 10 && x[i] <= 20)
+                {
+                    dentro++;
+                }
+                else
+                {
+                    fora++;
+                }
+            }
+
+            Console.WriteLine("");
+            Console.WriteLine($"{dentro} in");
+            Console.WriteLine($"{fora} out");
         }
     }
 }
