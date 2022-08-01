@@ -17,7 +17,7 @@ namespace Exemplo
 }
 ```
 
-A estrutura base de uma aplicação console do C#.
+A estrutura base de uma aplicação console em C#.
 
 ***using***
 
@@ -36,3 +36,9 @@ A estrutura base de uma aplicação console do C#.
 > Por convenção,a classe (*class*) já vem com o nome do arquivo (arquivo `Progran.cs`), e por questões de boas práticas e organização, é recomendado que a classe tenha o nome do arquivo (mas não é obrigatório).
 >
 > É a unidade básica da *programação orientada a objetos (POO)*, armazena o código e membros que o programador irá criar e utilizar em seu processo de criação.
+
+***static void Main (string[] args)***
+
+> Padrão do C# (CSharp) para identificar o *Entry Point* (ponto de entrada/ponto de partida) da aplicação.
+>
+> É aonde a execução começa. Tudo que estiver dentro deste método irá ser executado em primeiro lugar na sua aplicação.
