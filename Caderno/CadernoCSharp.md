@@ -42,3 +42,45 @@ A estrutura base de uma aplicação console em C#.
 > Padrão do C# (CSharp) para identificar o *Entry Point* (ponto de entrada/ponto de partida) da aplicação.
 >
 > É aonde a execução começa. Tudo que estiver dentro deste método irá ser executado em primeiro lugar na sua aplicação.
+
+---
+
+### TIPOS BÁSICOS DE VALORES E DADOS
+
+Dentro do C# e .NET, temos modos de se referir a valores de dados, e através destes valores, realizar cálculos e funções que necessitará de tais informações.
+
+Na tabela a seguir, teremos os tipos de valores referentes a parte numérica utilizada tanto pelo C# quanto o .NET.
+
+Primeiramente temos tipos com e sem sinal (negativos e positivos):
+
+| C# Type |          .NET Type          | Signed | Size (bits) |      Range      | Default Value |
+| :-----: | :-------------------------: | :----: | :---------: | :-------------: | :-----------: |
+|  sbyte  |  System.Sbyte<br />(SByte)  |  Yes   |      1      |   -128 to 127   |       0       |
+|  short  |  System.Int16<br />(Int16)  |  Yes   |      2      | -32786 to 32787 |       0       |
+|   int   |  System.Int32<br />(Int32)  |  Yes   |      4      | -2³¹ to 2³¹ -1  |       0       |
+|  long   |  System.Int64<br />(Int64)  |  Yes   |      8      | -2⁶³ to 2⁶³ -1  |      0L       |
+|  byte   |   System.Byte<br />(Byte)   |   No   |      1      |    0 to 255     |       0       |
+| ushort  | System.Uint16<br />(UInt16) |   No   |      2      |   0 to 65535    |       0       |
+|  uint   | System.Uint32<br />(UInt32) |   No   |      4      |    0 to 2³²     |       0       |
+|  ulong  | System.Uint64<br />(UInt64) |   No   |      8      |    0 to 2⁶³     |       0       |
+
+Ponto flutuante (com casas após a vírgula):
+
+| C# Type |   .NET Type    | Signed | Size (bits) |             Range              | Default Value |
+| :-----: | :------------: | :----: | :---------: | :----------------------------: | :-----------: |
+|  float  | System.Single  |  Yes   |     32      |  ±1.5 × 10‾⁴⁵ to ±3.4 × 10³⁸   |     0.0F      |
+| double  | System.Double  |  Yes   |     64      | ±5.0 × 10‾³²⁴ to ±1.7 × 10³⁰⁸  |     0.0D      |
+| decimal | System.Decimal |  Yes   |     128     | ±1.0 × 10‾²⁸ to ±7.9228 × 10²⁸ |     0.0M      |
+
+Um caractere (tanto letra como número):
+
+| C# Type |        .NET Type        | Size (bits) |         Range         | Default Value |
+| :-----: | :---------------------: | :---------: | :-------------------: | :-----------: |
+|  char   | System.Char<br />(Char) |     16      | Any Unicode charecter |     '\0'      |
+
+Tipo Booleano (verdadeiro ou falso):
+
+| C# Type |           .NET Type           | Size (bits) |    Values    |
+| :-----: | :---------------------------: | :---------: | :----------: |
+|  bool   | System.Boolean<br />(Boolean) |     16      | True / False |
+
