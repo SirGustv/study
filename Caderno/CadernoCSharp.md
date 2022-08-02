@@ -66,11 +66,11 @@ Primeiramente temos tipos com e sem sinal (negativos e positivos):
 
 Ponto flutuante (com casas após a vírgula):
 
-| C# Type |   .NET Type    | Signed | Size (bits) |             Range              | Default Value |
-| :-----: | :------------: | :----: | :---------: | :----------------------------: | :-----------: |
-|  float  | System.Single  |  Yes   |     32      |  ±1.5 × 10‾⁴⁵ to ±3.4 × 10³⁸   |     0.0F      |
-| double  | System.Double  |  Yes   |     64      | ±5.0 × 10‾³²⁴ to ±1.7 × 10³⁰⁸  |     0.0D      |
-| decimal | System.Decimal |  Yes   |     128     | ±1.0 × 10‾²⁸ to ±7.9228 × 10²⁸ |     0.0M      |
+| C# Type |           .NET Type           | Signed | Size (bits) |             Range              | Default Value |
+| :-----: | :---------------------------: | :----: | :---------: | :----------------------------: | :-----------: |
+|  float  |  System.Single<br />(Single)  |  Yes   |     32      |  ±1.5 × 10‾⁴⁵ to ±3.4 × 10³⁸   |     0.0F      |
+| double  |  System.Double<br />(Double)  |  Yes   |     64      | ±5.0 × 10‾³²⁴ to ±1.7 × 10³⁰⁸  |     0.0D      |
+| decimal | System.Decimal<br />(Decimal) |  Yes   |     128     | ±1.0 × 10‾²⁸ to ±7.9228 × 10²⁸ |     0.0M      |
 
 Um caractere (tanto letra como número):
 
