@@ -72,6 +72,8 @@ Ponto flutuante (com casas após a vírgula):
 | double  |  System.Double<br />(Double)  |  Yes   |     64      | ±5.0 × 10‾³²⁴ to ±1.7 × 10³⁰⁸  |     0.0D      |
 | decimal | System.Decimal<br />(Decimal) |  Yes   |     128     | ±1.0 × 10‾²⁸ to ±7.9228 × 10²⁸ |     0.0M      |
 
+*Para que seja possível visualizar o valor mínimo e máximo é necessário utilizar respectivamente as funções "**.MinValue**" e "**.MaxValue**".* *EXE.:* ```int.MinValue```; ```double.MaxValue```... 
+
 Um caractere (tanto letra como número):
 
 | C# Type |        .NET Type        | Size (bits) |         Range         | Default Value |
