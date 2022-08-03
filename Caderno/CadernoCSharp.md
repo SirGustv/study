@@ -84,3 +84,10 @@ Tipo Booleano (verdadeiro ou falso):
 | :-----: | :---------------------------: | :---------: | :----------: |
 |  bool   | System.Boolean<br />(Boolean) |     16      | True / False |
 
+Tipos de referência:
+
+| C# Type |   .NET Type   | Description                                                  |
+| :-----: | :-----------: | :----------------------------------------------------------- |
+| string  | System.String | Cadeia de caracteres Unicode <br />**IMUTÁVEL** (tornando os programas mais seguros, simples e *thread safe*) |
+| object  | System.Object | Um objeto genérico (toda classe em C# é subclasse de object) |
+
