@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using BasicType;
 
 namespace Exercicios
 {
@@ -8,7 +9,7 @@ namespace Exercicios
         static void Main(string[] args)
         {
             Console.Clear();
-            SextoTeste();
+            BasicTypeExe.Exe1();
         }
         static void PrimeiroTeste()
         //Fazer um programa para ler o código de uma peça (peça 1), o número de peças 1, o valor unitário de cada peça 1,
