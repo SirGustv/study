@@ -93,3 +93,10 @@ Tipos de referência:
 | string  | System.String | Cadeia de caracteres Unicode <br />**IMUTÁVEL** (tornando os programas mais seguros, simples e *thread safe*) |
 | object  | System.Object | Um objeto genérico (toda classe em C# é subclasse de object) |
 
+### SAÍDA DE DADOS
+
+Para a impressão de dados padrão (tela do console) para o usuário, em C#, é utilizado os comandos ``Console.Write()`` e ``Console.WriteLine()``. O valor que será exibido para o usuário estará presente dentro dos parenteses.
+
+O comando ``Console.WriteLine()`` adiciona, além do conteúdo a ser exibido, uma quebra de linha.
+
+O comando ``Console.Write()`` não realiza esta quebra de linha.
