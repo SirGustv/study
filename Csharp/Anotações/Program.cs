@@ -1,5 +1,5 @@
 ﻿using System; //Importações -> Sempre definidas pelo "using", serve para definir quais bibliotecas/namespaces de código o programa irá usar.
-using System.Globalization;
+using System.Globalization;//Esta importação é responsavel por trazer a biblioteca de funções referentes a especificações de regiões/tipos de valores como são representados em diferentes locais do planeta.
 namespace Anotações //Divisões lógicas -> Normalmente acompanham o nome da pasta em que está. É um agrupamento de classes relacionadas.
 {
     class Program //Unidade base da programação orientada a objetos (POO). Todo o código a ser escrito em C#, deve estar dentro de uma classe.
@@ -15,7 +15,7 @@ namespace Anotações //Divisões lógicas -> Normalmente acompanham o nome da p
 
             Console.WriteLine(num1);//Para exibir uma variável na saida de dados basta escreve-lá dentro dos parênteses(neste exemplo não há necessidade de aspas pois há somente uma variável sem texto a acompanhando)
             Console.WriteLine(num1.ToString("F1"));//Nesta saída, é feito um controle sobre a quantidade de casas decimais irão ser exibidas na saída(somente uma neste exemplo).
-            Console.WriteLine(num1.ToString("F2", CultureInfo.InvariantCulture));//Nesta saída, além do controle de casas decimais, tambem é removido a variação de separador, deixando invariante o símbolo de separador '.'
+            Console.WriteLine(num1.ToString("F2", CultureInfo.InvariantCulture));//Nesta saída, além do controle de casas decimais, tambem é removido a variação de separador cultural, deixando invariante o símbolo de separador '.'
         }
     }
 }
