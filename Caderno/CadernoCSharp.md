@@ -100,3 +100,34 @@ Para a impressão de dados padrão (tela do console) para o usuário, em C#, é 
 O comando ``Console.WriteLine()`` adiciona, além do conteúdo a ser exibido, uma quebra de linha.
 
 O comando ``Console.Write()`` não realiza esta quebra de linha.
+
+### PLACEHOLDERS, CONCATENAÇÃO E INTERPOLAÇÃO
+
+Estes modos de escrita de saída de dados tendem a ser utilizadas para que seja impresso na saída de uma forma mais eficiente e menos cansativa, pois ao invés de utilizar vários ``COnsole.Write`` ou ``Console.WriteLine``, com apenas um único comando de saída de dados será possível escrever tudo (ou quase tudo) em um dos comandos de saída.
+
+```csharp	
+using System;
+
+namespace Exemplo
+{
+	class Progran
+	{
+    	static void Main(string[] args)
+        {
+            int age = 32; //tipo de valor inteiro
+            double balance = 10.35784; //tipo de valor com ponto flutuante
+            string name = "Maria"; //Tipo de valor de cadeia de caracteres
+            
+            //Placeholders(lugar de entrada)
+            Console.WriteLine("{0} tem {1} anos de idade e saldo de {2:F2} reais.", name, age, balance);
+         	
+            //Concatenação
+            Console.WriteLine(name + " tem " + age + " anos de idade e saldo de " + balance.ToString("F2") + " reais");
+            
+            //Interpolação
+            Console.WriteLine($"{name} tem {age} anos de idade e saldo de {balance:F2}");
+        }
+	}    
+}
+```
+
