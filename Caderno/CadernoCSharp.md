@@ -131,3 +131,14 @@ namespace Exemplo
 }
 ```
 
+**Placeholders**
+
+> Utilizando de chaves com uma numeração expecífica (como uma lista, que tem inicio em '0') é denominada a posição em que as devidas varíaveis irão entrar no contexto. Após definir todos os espaços que serão ocupados pelas variáveis, após o fechamento de aspas, separados por um vírgula, é a hora de inserir na ordem em que deseja ser apresentada as variáveis.
+
+**Concatenação**
+
+> Este modo utiliza a junção de várias partes, sendo agrupadas através do símbolo '+', que irá concatenar as variáveis junto ao texto escrito.
+
+**Interpolação**
+
+> A interpolação permite que, com o símbolo de '$' antes das aspas, a variável possa ser escrita dentro das chaves que anteriormente armazenaria somente a posição a qual a variável iria ser alocada.
