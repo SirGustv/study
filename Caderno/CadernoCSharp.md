@@ -93,6 +93,8 @@ Tipos de referência:
 | string  | System.String | Cadeia de caracteres Unicode <br />**IMUTÁVEL** (tornando os programas mais seguros, simples e *thread safe*) |
 | object  | System.Object | Um objeto genérico (toda classe em C# é subclasse de object) |
 
+---
+
 ### SAÍDA DE DADOS
 
 Para a impressão de dados padrão (tela do console) para o usuário, em C#, é utilizado os comandos ``Console.Write()`` e ``Console.WriteLine()``. O valor que será exibido para o usuário estará presente dentro dos parenteses.
@@ -100,6 +102,8 @@ Para a impressão de dados padrão (tela do console) para o usuário, em C#, é 
 O comando ``Console.WriteLine()`` adiciona, além do conteúdo a ser exibido, uma quebra de linha.
 
 O comando ``Console.Write()`` não realiza esta quebra de linha.
+
+---
 
 ### PLACEHOLDERS, CONCATENAÇÃO E INTERPOLAÇÃO
 
@@ -142,3 +146,19 @@ namespace Exemplo
 **Interpolação**
 
 > A interpolação permite que, com o símbolo de '$' antes das aspas, a variável possa ser escrita dentro das chaves que anteriormente armazenaria somente a posição a qual a variável iria ser alocada.
+
+---
+
+### OPERADORES DE ATRIBUIÇÃO
+
+Os operadores de atribuição irão **atribuir** um valor a determinada variável.
+
+| OPERADOR | EXEMPLO |    SIGNIFICADO     |
+| :------: | :-----: | :----------------: |
+|    =     | a = 10; |  a **RECEBE** 10   |
+|    +=    | a += 2; | a **RECEBE** a + 2 |
+|    -=    | a -= 2; | a **RECEBE** a - 2 |
+|    *=    | a *= 2; | a **RECEBE** a * 2 |
+|    /=    | a /= 2; | a **RECEBE** a / 2 |
+|    %=    | a %= 3; | a **RECEBE** a % 2 |
+
