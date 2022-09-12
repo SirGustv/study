@@ -47,5 +47,20 @@ namespace ConditionalStructures
             int soma = value1 + value2;
             Console.WriteLine("SOMA = " + soma);
         }
+
+        // O exercício proposto 2 já foi realizado, é possível vê-lo no arquivo 'Program.cs' descrito como o método 'SegundoTeste".
+        public static void ExeProp3()
+        // Fazer um programa para ler quatro valores inteiros A, B, C e D. A seguir, calcule e mostre a diferença do produto
+        // de A e B pelo produto de C e D segundo a fórmula: DIFERENCA = (A * B - C * D).
+        {
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            int c = int.Parse(Console.ReadLine());
+            int d = int.Parse(Console.ReadLine());
+
+            int diff = (a * b) - (c * d);
+
+            Console.WriteLine("DIFERENCA = " + diff);
+        }
     }
 }
