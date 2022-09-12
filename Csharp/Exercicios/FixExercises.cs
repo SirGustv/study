@@ -33,3 +33,19 @@ namespace FixExercises
 
     }
 }
+
+namespace ConditionalStructures
+{
+    public class ExeProp
+    {
+        public static void ExeProp1()
+        // Faça um programa para ler dois valores inteiros, e depois mostrar na tela a soma desses números com uma
+        // mensagem explicativa.
+        {
+            int value1 = int.Parse(Console.ReadLine());
+            int value2 = int.Parse(Console.ReadLine());
+            int soma = value1 + value2;
+            Console.WriteLine("SOMA = " + soma);
+        }
+    }
+}
