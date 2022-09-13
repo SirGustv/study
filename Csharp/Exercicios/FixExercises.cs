@@ -77,5 +77,24 @@ namespace ConditionalStructures
             System.Console.WriteLine("SALARY = U$ " + salary.ToString("F2", CultureInfo.InvariantCulture));
 
         }
+
+        public static void ExeProp5()
+        // Fazer um programa para ler o código de uma peça 1, o número de peças 1, o valor unitário de cada peça 1, o
+        // código de uma peça 2, o número de peças 2 e o valor unitário de cada peça 2. Calcule e mostre o valor a ser pago.
+        {
+            string[] parts1 = Console.ReadLine().Split(' ');
+            int codParts1 = int.Parse(parts1[0]);
+            int numParts1 = int.Parse(parts1[1]);
+            double valueUnit1 = double.Parse(parts1[2], CultureInfo.InvariantCulture);
+
+            string[] parts2 = Console.ReadLine().Split(' ');
+            int codParts2 = int.Parse(parts2[0]);
+            int numParts2 = int.Parse(parts2[1]);
+            double valueUnit2 = double.Parse(parts2[2], CultureInfo.InvariantCulture);
+
+            double totalValue = (double)(numParts1 * valueUnit1) + (numParts2 * valueUnit2);
+
+            Console.WriteLine("VALOR A PAGAR: R$ " + totalValue.ToString("F2", CultureInfo.InvariantCulture));
+        }
     }
 }
