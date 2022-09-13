@@ -73,8 +73,8 @@ namespace ConditionalStructures
             double hourValue = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             double salary = (double)hoursJob * hourValue;
 
-            System.Console.WriteLine("NUMBER = " + numFunc);
-            System.Console.WriteLine("SALARY = U$ " + salary.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("NUMBER = " + numFunc);
+            Console.WriteLine("SALARY = U$ " + salary.ToString("F2", CultureInfo.InvariantCulture));
 
         }
 
@@ -95,6 +95,32 @@ namespace ConditionalStructures
             double totalValue = (double)(numParts1 * valueUnit1) + (numParts2 * valueUnit2);
 
             Console.WriteLine("VALOR A PAGAR: R$ " + totalValue.ToString("F2", CultureInfo.InvariantCulture));
+        }
+
+        public static void ExeProp6()
+        // Fazer um programa que leia três valores com ponto flutuante de dupla precisão: A, B e C. Em seguida, calcule e mostre:
+        // a) a área do triângulo retângulo que tem A por base e C por altura.
+        // b) a área do círculo de raio C. (pi = 3.14159)
+        // c) a área do trapézio que tem A e B por bases e C por altura.
+        // d) a área do quadrado que tem lado B.
+        // e) a área do retângulo que tem lados A e B.
+        {
+            string[] values = Console.ReadLine().Split(' ');
+            double A = double.Parse(values[0], CultureInfo.InvariantCulture);
+            double B = double.Parse(values[1], CultureInfo.InvariantCulture);
+            double C = double.Parse(values[2], CultureInfo.InvariantCulture);
+
+            double triangle = A * C / 2.0;
+            double circle = 3.14159 * C * C;
+            double trapeze = (A + B) / 2.0 * C;
+            double square = B * B;
+            double rectangle = A * B;
+
+            Console.WriteLine("TRIANGULO: " + triangle.ToString("F3", CultureInfo.InvariantCulture));
+            Console.WriteLine("CIRCULO: " + circle.ToString("F3", CultureInfo.InvariantCulture));
+            Console.WriteLine("TRAPEZIO: " + trapeze.ToString("F3", CultureInfo.InvariantCulture));
+            Console.WriteLine("QUADRADO: " + square.ToString("F3", CultureInfo.InvariantCulture));
+            Console.WriteLine("RETANGULO: " + rectangle.ToString("F3", CultureInfo.InvariantCulture));
         }
     }
 }
