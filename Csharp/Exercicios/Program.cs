@@ -11,7 +11,7 @@ namespace Exercicios
         static void Main(string[] args)
         {
             Console.Clear();
-            ExeProp.ExeProp3();
+            ExeProp.ExeProp4();
         }
         static void PrimeiroTeste()
         //Fazer um programa para ler o código de uma peça (peça 1), o número de peças 1, o valor unitário de cada peça 1,
