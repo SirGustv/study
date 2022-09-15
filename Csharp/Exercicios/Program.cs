@@ -12,7 +12,7 @@ namespace Exercicios
         public static void Main(string[] args)
         {
             Console.Clear();
-            CondtStructure.ExeProp6();
+            CondtStructure.ExeProp7();
         }
         static void PrimeiroTeste()
         //Fazer um programa para ler o código de uma peça (peça 1), o número de peças 1, o valor unitário de cada peça 1,
