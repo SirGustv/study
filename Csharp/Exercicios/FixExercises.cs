@@ -34,9 +34,9 @@ namespace FixExercises
     }
 }
 
-namespace ConditionalStructures
+namespace SequentialStructures
 {
-    public class ExeProp
+    public class SequentStructure
     {
         public static void ExeProp1()
         // Faça um programa para ler dois valores inteiros, e depois mostrar na tela a soma desses números com uma
@@ -121,6 +121,22 @@ namespace ConditionalStructures
             Console.WriteLine("TRAPEZIO: " + trapeze.ToString("F3", CultureInfo.InvariantCulture));
             Console.WriteLine("QUADRADO: " + square.ToString("F3", CultureInfo.InvariantCulture));
             Console.WriteLine("RETANGULO: " + rectangle.ToString("F3", CultureInfo.InvariantCulture));
+        }
+    }
+}
+
+namespace ConditionalStructures
+{
+    public class CondtStructure
+    {
+        public static void ExeProp1()
+        // Fazer um programa para ler um número inteiro, e depois dizer se este número é negativo ou não.
+        {
+            int number = int.Parse(Console.ReadLine());
+            if (number >= 0)
+                Console.WriteLine("NAO NEGATIVO");
+            else
+                Console.WriteLine("NEGATIVO");
         }
     }
 }
