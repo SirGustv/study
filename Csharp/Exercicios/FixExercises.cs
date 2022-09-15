@@ -181,5 +181,30 @@ namespace ConditionalStructures
 
             Console.WriteLine($"O JOGO DUROU {duration} HORA(S)");
         }
+
+        public static void ExeProp5()
+        // Escreva um programa que leia o código de um item e a quantidade deste item. A
+        // seguir, calcule e mostre o valor da conta a pagar.
+        {
+            string[] request = Console.ReadLine().Split(' ');
+            double cod = double.Parse(request[0]);
+            double qntd = double.Parse(request[1]);
+
+            double price = 0.0;
+
+            if (cod == 1)
+                price = 4.00 * qntd;
+            else if (cod == 2)
+                price = 4.50 * qntd;
+            else if (cod == 3)
+                price = 5.00 * qntd;
+            else if (cod == 4)
+                price = 2.00 * qntd;
+            else
+                price = 1.50 * qntd;
+
+            Console.WriteLine("Total: R$ " + price.ToString("F2"));
+
+        }
     }
 }
