@@ -151,6 +151,9 @@ namespace ConditionalStructures
         }
 
         public static void ExeProp3()
+        // Leia 2 valores inteiros (A e B). Após, o programa deve mostrar uma mensagem "Sao Multiplos" ou "Nao sao
+        // Multiplos", indicando se os valores lidos são múltiplos entre si. Atenção: os números devem poder ser digitados em
+        // ordem crescente ou decrescente.
         {
             int A = int.Parse(Console.ReadLine());
             int B = int.Parse(Console.ReadLine());
@@ -159,6 +162,24 @@ namespace ConditionalStructures
                 Console.WriteLine("Sao Multiplos");
             else
                 Console.WriteLine("Nao Sao Multiplos");
+        }
+
+        public static void ExeProp4()
+        // Leia a hora inicial e a hora final de um jogo. A seguir calcule a duração do jogo, sabendo que o mesmo pode
+        // começar em um dia e terminar em outro, tendo uma duração mínima de 1 hora e máxima de 24 horas.
+        {
+            string[] values = Console.ReadLine().Split(' ');
+            int hour1 = int.Parse(values[0]);
+            int hour2 = int.Parse(values[1]);
+
+            int duration;
+
+            if (hour1 < hour2)
+                duration = hour2 - hour1;
+            else
+                duration = 24 - hour1 + hour2;
+
+            Console.WriteLine($"O JOGO DUROU {duration} HORA(S)");
         }
     }
 }
