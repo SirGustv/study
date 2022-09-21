@@ -301,5 +301,29 @@ namespace WhileStructure
             }
             Console.WriteLine("Acesso Permitido");
         }
+        public static void ExeProp2()
+        // Escreva um programa para ler as coordenadas (X,Y) de uma quantidade indeterminada de pontos no sistema
+        // cartesiano. Para cada ponto escrever o quadrante a que ele pertence. O algoritmo será encerrado quando pelo
+        // menos uma de duas coordenadas for NULA (nesta situação sem escrever mensagem alguma).
+        {
+            string[] entry = Console.ReadLine().Split(' ');
+            int x = int.Parse(entry[0]);
+            int y = int.Parse(entry[1]);
+
+            while (x != 0 && y != 0)
+            {
+                if (x > 0 && y > 0)
+                    Console.WriteLine("Primeiro");
+                else if (x > 0 && y < 0)
+                    Console.WriteLine("Quarto");
+                else if (x < 0 && y < 0)
+                    Console.WriteLine("Terceiro");
+                else
+                    Console.WriteLine("Segundo");
+                entry = Console.ReadLine().Split(' ');
+                x = int.Parse(entry[0]);
+                y = int.Parse(entry[1]);
+            }
+        }
     }
 }
