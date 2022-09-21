@@ -358,3 +358,20 @@ namespace WhileStructure
         }
     }
 }
+
+namespace ForStructure
+{
+    public class ForStruct
+    {
+        public static void ExeProp1()
+        {
+            int x = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= x; i++)
+            {
+                if (i % 2 != 0)
+                    Console.WriteLine(i);
+            }
+        }
+    }
+}
