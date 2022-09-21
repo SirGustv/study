@@ -4,6 +4,7 @@ using BasicType;
 using FixExercises;
 using SequentialStructures;
 using ConditionalStructures;
+using WhileStructure;
 
 namespace Exercicios
 {
@@ -12,7 +13,7 @@ namespace Exercicios
         public static void Main(string[] args)
         {
             Console.Clear();
-            CondtStructure.ExeProp8();
+            WhileStruct.ExeProp1();
         }
         static void PrimeiroTeste()
         //Fazer um programa para ler o código de uma peça (peça 1), o número de peças 1, o valor unitário de cada peça 1,
