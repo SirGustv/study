@@ -416,5 +416,26 @@ namespace ForStructure
                 Console.WriteLine(media.ToString("F1", CultureInfo.InvariantCulture));
             }
         }
+        public static void ExeProp4()
+        // Fazer um programa para ler um número N. Depois leia N pares de números e mostre a divisão do primeiro pelo
+        // segundo. Se o denominador for igual a zero, mostrar a mensagem "divisao impossivel".
+        {
+            int n = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= n; i++)
+            {
+                string[] values = Console.ReadLine().Split(' ');
+                int x = int.Parse(values[0]);
+                int y = int.Parse(values[1]);
+
+                if (y == 0)
+                    Console.WriteLine("divisão impossível");
+                else
+                {
+                    double div = (double)x / y;
+                    Console.WriteLine(div.ToString("F1", CultureInfo.InvariantCulture));
+                }
+            }
+        }
     }
 }
