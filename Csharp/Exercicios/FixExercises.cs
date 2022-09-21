@@ -437,5 +437,24 @@ namespace ForStructure
                 }
             }
         }
+        public static void ExeProp5()
+        // Ler um valor N. Calcular e escrever seu respectivo fatorial. Fatorial de N = N * (N-1) * (N-2) * (N-3) * ... * 1.
+        // Lembrando que, por definição, fatorial de 0 é 1.
+        {
+            int n = int.Parse(Console.ReadLine());
+
+            int fat = 1;
+
+            if (n == 0)
+                Console.WriteLine(fat);
+            else
+            {
+                for (int i = 1; i <= n; i++)
+                {
+                    fat *= i;
+                }
+                Console.WriteLine(fat);
+            }
+        }
     }
 }
