@@ -375,5 +375,23 @@ namespace ForStructure
                     Console.WriteLine(i);
             }
         }
+        public static void ExeProp2()
+        {
+            int n = int.Parse(Console.ReadLine());
+
+            int inside = 0;
+            int outside = 0;
+
+            for (int i = 1; i <= n; i++)
+            {
+                int x = int.Parse(Console.ReadLine());
+                if (x >= 10 && x <= 20)
+                    inside += 1;
+                else
+                    outside += 1;
+            }
+            Console.WriteLine($"{inside} in");
+            Console.WriteLine($"{outside} out");
+        }
     }
 }
