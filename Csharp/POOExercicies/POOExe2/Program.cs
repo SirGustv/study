@@ -6,6 +6,8 @@ namespace POOExe2
     class Program
     {
         static void Main(string[] args)
+        // Fazer um programa para ler nome e salário de dois funcionários. Depois, mostrar o salário
+        // médio dos funcionários.
         {
             Console.Clear();
             Funcionary p1 = new Funcionary();

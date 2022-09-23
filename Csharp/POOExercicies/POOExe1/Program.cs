@@ -6,6 +6,8 @@ namespace POOExe
     class Program
     {
         static void Main(string[] args)
+        // Fazer um programa para ler os dados de duas pessoas, depois mostrar o nome da pessoa mais
+        // velha.
         {
             PersonData p1 = new PersonData();
             PersonData p2 = new PersonData();
