@@ -59,6 +59,8 @@ Listagem atualizada de funcionários:
 
 772, Joaquim Matos, 5000.00
 
+---
+
 #### Exemplo 2:
 Quantos funcionários serão cadastrados? **2**
 
