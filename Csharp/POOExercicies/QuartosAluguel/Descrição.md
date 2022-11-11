@@ -13,22 +13,42 @@ Veja o exemplo (os valores que devem ser digitados pelo usuário estão destacad
 #### Exemplo:
 Quantos aluguéis serão registrados? **3**
 
+
+
 Dados do 1° aluguel:
+
 Nome: **Ana Maria**
+
 Email: **ana@gmail.com**
+
 Quarto: **5**
 
+
+
 Dados do 2° aluguel:
+
 Nome: **Marco Antonio**
+
 Email: **marco@gmail.com**
+
 Quarto: **1**
 
+
+
 Dados do 3° aluguel:
+
 Nome: **Tiago Lucio**
+
 Email: **tiago@gmail.com**
+
 Quarto: **8**
 
+
+
 Quartos ocupados:
+
 1: Marco Antonio, marco@gmail.com
+
 5: Ana Maria, ana@gmail.com
+
 8: Tiago Lucio, tiago@gmail.com

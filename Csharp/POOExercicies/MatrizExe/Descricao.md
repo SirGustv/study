@@ -6,10 +6,17 @@ Mostrar os valores à esquerda, acima, à direita e abaixo de X, quando houver, 
 
 ### Exemplo:
 **3 4**
+
 **10 7 15 12**
+
 **21 11 23 8**
+
 **14 5 13 19**
+
 **8**
+
 Esquerda: 23
+
 Acima: 12
+
 Abaixo: 19
