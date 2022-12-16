@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
-using ClientOrder.Entities;
+using System.Globalization;
+using System.Text;
 using ClientOrder.Entities.Enums;
 
 namespace ClientOrder.Entities
@@ -38,6 +39,25 @@ namespace ClientOrder.Entities
                 sum += item.SubTotal();
             }
             return sum;
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.AppendLine("Order Moment: " + Moment.ToString("dd/MM/yyyy HH:mm:ss"));
+            sb.AppendLine($"Order Status: {Status}");
+            sb.AppendLine($"Client: {Client}");
+            sb.AppendLine("Order Items:");
+
+            foreach (OrderItem item in Items)
+            {
+                sb.AppendLine(item.ToString());
+            }
+
+            sb.AppendLine("Total price: $" + Total().ToString("F2", CultureInfo.InvariantCulture));
+
+            return sb.ToString();
         }
     }
 }
