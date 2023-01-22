@@ -28,7 +28,7 @@ namespace BankAccount.Entities
         {
             if (amount > WithdrawLimit)
             {
-                throw new DomainException("The amount esceeds withdraw limit");
+                throw new DomainException("The amount exceeds withdraw limit");
             }
             if (amount > Balance)
             {
